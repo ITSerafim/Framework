@@ -1,0 +1,51 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "JavaScript Excel App",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoloProger/Framework.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Andrei Solo <solo.proger@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoloProger/Framework/issues"
+  },
+  "homepage": "https://github.com/SoloProger/Framework#readme",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/eslint-parser": "^7.5.4",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.12.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
