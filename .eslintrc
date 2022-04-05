@@ -12,7 +12,13 @@
     "arrow-parens": "off",
     "quotes": "off",
     "require-jsdoc": "off",
-    "eol-last": "off"
+    "eol-last": "off",
+    "object-curly-spacing": "off",
+    "comma-dangle": "off",
+    "brace-style": "off",
+    "space-before-blocks": "off",
+    "semi": "off",
+    "operator-linebreak": "off",
   },
   "extends": ["eslint:recommended", "google"]
 }

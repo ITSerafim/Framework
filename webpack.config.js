@@ -20,6 +20,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
   resolve: {
+    aliasFields: ["browser"],
     extensions: [".js"],
     alias: {
       "@": path.resolve(__dirname, "src"),
