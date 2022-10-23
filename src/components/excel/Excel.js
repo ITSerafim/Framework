@@ -1,18 +1,20 @@
-import {$} from "@core/dom";
-import {Emitter} from "@core/Emitter";
+import { $ } from "@core/dom";
+import { Emitter } from "@core/Emitter";
 
 export class Excel {
   constructor(selector, options) {
     this.$element = $(selector);
     this.components = options.components || [];
+    this.store = options.store;
     this.emitter = new Emitter();
   }
 
   getRoot() {
     const $root = $.create("div", "excel");
     const comoponentOptions = {
-      emitter: this.emitter
-    }
+      emitter: this.emitter,
+      store: this.store
+    };
     this.components = this.components.map(Component => {
       const $element = $.create("div", Component.className);
       const component = new Component($element, comoponentOptions);
@@ -33,7 +35,7 @@ export class Excel {
     this.components.forEach(component => component.init());
   }
 
-  destroy(){
+  destroy() {
     this.components.forEach(component => component.destroy());
   }
 }
